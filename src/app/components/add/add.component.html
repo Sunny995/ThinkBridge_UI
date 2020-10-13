@@ -1,0 +1,15 @@
+<mat-card>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit(name.value,price.value)">
+         <div [ngClass]="'add_form'">
+            <mat-form-field>
+                <input matInput #receipe_name placeholder="Name" formControlName="name">
+                <mat-error>This field is required</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <textarea matInput #procedure placeholder="Price" formControlName="price"></textarea>
+                <mat-error>This field is required</mat-error>
+            </mat-form-field>
+            <button mat-raised-button color="primary" [disabled]="addForm.invalid" type="submit">Add Receipe</button>
+        </div>
+    </form>
+</mat-card>

@@ -1,0 +1,29 @@
+.card{
+    background-color: rgb(151, 241, 253);
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.top_bar_main{
+    display: flex;
+    min-height: 60px;
+    background-color: lightgrey;
+}
+
+.nav_bar{
+    width:15%;
+    min-height: 645px;
+    float: left;
+    overflow-y: auto;
+}
+
+.nav_bar,.content_items{
+    min-height: 650px;
+}
+.content_items{
+    background-color: rgb(63, 62, 62);
+}
+
+.edit_form{
+    float: right;
+    width: 70%;
+}

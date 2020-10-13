@@ -1,0 +1,19 @@
+<app-header [ngClass]="'top_bar_main'"></app-header>
+<div>
+    <!-- <a mat-button (click)="delete()"> Deletye</a> -->
+    <app-nav [ngClass]="'nav_bar'"></app-nav>
+    
+    
+    <div *ngIf="edit === false" [ngClass]="'content_items'" align="center" fxLayout="row wrap" fxLayoutGap="25px"
+        fxLayoutAlign="flex-start">
+        <mat-card [ngClass]="'card'" fxFlex="0 1 calc(23.3% - 32px)" *ngFor='let c of cars'>
+            <mat-card-header>
+                <mat-card-title>{{c.name}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="http://www.pngall.com/wp-content/uploads/2016/03/Food-Free-PNG-Image.png">
+            <mat-card-actions>
+                <h4>{{c.price}}</h4>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>s

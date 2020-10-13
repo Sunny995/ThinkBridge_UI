@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Think-bridge-app"
+    }
+  },
+  "defaultProject": "Think-bridge-app",
+  "cli": {
+    "analytics": false
+  }
 }
